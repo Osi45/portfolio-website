@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying code to remote server...'
-                sh 'cd ~/Desktop/Osi45/ && rsync -avz --delete . ec2-user@ec2-3-89-28-227:/var/www/html'
+                sh 'cd ~/Desktop/Osi45/ && rsync -avz --delete . ec2-user@2-3-89-28-227:/var/www/html'
                 echo 'Deployment completed.'
             }
         }
